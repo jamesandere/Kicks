@@ -1,0 +1,202 @@
+.shoe-cont {
+    display: flex;
+    position: relative;
+    padding: 0 20px;
+    background-color: white;
+}
+
+.shoePics {
+    position: absolute;
+}
+
+.shoePics img {
+    height: 72px;
+    width: 72px;
+    display: flex;
+    flex-direction: column;
+    /* border: 2.5px solid black; */
+    border-radius: 5px;
+    margin: 4px;
+    padding: 1px;
+    object-fit: cover;
+}
+
+.left {
+    flex: 1.5;
+    display: flex;
+    /* background-color: aqua; */
+    position: relative;
+    height: 70vh;
+}
+
+.mainPic {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 600px;
+}
+
+.right {
+    flex: 1.2;
+}
+
+.right h1 {
+    text-transform: uppercase;
+}
+
+.price {
+    margin-bottom: 20px;
+}
+
+.sku {
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.sku span {
+    font-weight: bold;
+}
+
+select {
+    padding: 20px;
+    width: 90%;
+    outline: none;
+    text-transform: uppercase;
+}
+
+option {
+    padding:20px;
+}
+
+.amount-container {
+    display: flex;
+    align-items: center;
+}
+
+.amount-container span {
+    border: 1px solid black;
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+}
+
+.btn-add {
+    border: 1px solid black;
+    background-color: white;
+    width: 90%;
+    padding: 15px 10px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.btn-add:hover {
+    background-color: black;
+    color: white;
+}
+
+.btn-buy {
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    width: 90%;
+    padding: 15px 10px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.shoe-deets {
+    padding: 10px 30px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.shoe-deets hr, .specs hr {
+    border: 1px solid #eee;
+}
+
+.shoe-deets p {
+    font-size: 18px;
+    letter-spacing: 0.03em;
+}
+
+.shoe-deets p {
+    width: 60%;
+}
+
+.shoe-deets h1, .specs h1 {
+    font-size: 22px;
+}
+
+.specs {
+    padding: 10px 30px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.tab {
+    display: flex;
+    justify-content: center;
+}
+
+.tab-card {
+    width: 40%;
+    border: 1px solid #eee;
+    margin: 20px;
+    text-align: center;
+}
+
+.tab-card h2 {
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 406px){
+    .shoe-cont {
+        flex-direction: column;
+    }
+    
+    .right h1 {
+        font-size: 20px;
+        margin-bottom: 20px;
+        width: 300px;
+    }
+
+    select {
+        padding: 10px 10px;
+    }
+
+    .amount-container span {
+        height: 24px;
+        width: 24px;
+    }
+
+    .btn-add, .btn-buy {
+        padding: 10px 8px;
+    }
+
+    .shoe-deets p {
+        width: 100%;
+        font-size: 17px;
+    }
+
+    .tab {
+        flex-direction: column;
+    }
+
+    .tab-card {
+        width: 80%;
+    }
+
+    .tab-card h2, .tab-card h3 {
+        font-size: 16px;
+    }
+}
